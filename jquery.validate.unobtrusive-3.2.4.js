@@ -43,7 +43,7 @@
           replaceAttrValue = container.attr("data-valmsg-replace"),
           replace = replaceAttrValue ? $.parseJSON(replaceAttrValue) !== false : null;
 
-      container.removeClass("field-validation-valid").addClass("field-validation-error");
+      container.removeClass("field-validation-valid").addClass("is-invalid").addClass("field-validation-error");
       error.data("unobtrusiveContainer", container);
 
       if (replace) {
