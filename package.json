@@ -5,8 +5,12 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "start": "browser-sync start --server --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jose Ernesto Ocampo Cicero",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
 }
