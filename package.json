@@ -1,0 +1,12 @@
+{
+  "name": "jqueryvalidations",
+  "version": "0.1.0",
+  "description": "Reference of jQuery's Form Validation",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Ernesto Ocampo Cicero",
+  "license": "MIT"
+}
