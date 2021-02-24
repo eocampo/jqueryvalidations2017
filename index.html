@@ -4,57 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jQuery's Form Validations</title>
+  <title>jQuery's Form Validation Reference</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <article class="container">
-
-    <h1>jQuery's Form Validations Reference Project</h1>
-    <p>This repository provides reference about common uses of 
-    jQuery's Form Validation and the Extensions with 
+    <h1>jQuery's Form Validation Reference</h1>
+    <p class="abstract">This repository provides reference about common uses of 
+    <a href="https://jqueryvalidation.org/">jQuery's Form Validation </a>
+    and the Extensions with 
     Microsoft Unobstrusive Validation</p>
-
-    <form>
-      <div class="form-group">
-        <label for="Email">Email</label>
-        <input id="Email" name="Email" class="form-control" autofocus="autofocus"
-          data-val="true" data-val-email="El campo Email no es una dirección de correo electrónico válida." 
-          data-val-required="El campo Email es obligatorio."
-          aria-describedby="EmailFeedback" />
-        <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-        <!-- <div id="EmailFeedback" class="valid-feedback">
-          Looks good!
-        </div> -->
-        <div id="Email-error" class="invalid-feedback">
-          Please provide a valid city.
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="FirstName">First Name</label>
-        <input id="FirstName" name="FirstName" class="form-control"
-          data-val="true" data-val-required="El campo First Name es obligatorio." />
-        <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>        
-      </div>
-      <div class="form-group">
-        <label for="LastName">Last Name</label>
-        <input id="LastName" name="LastName" class="form-control" 
-          data-val="true" data-val-required="El campo Last Name es obligatorio." />
-        <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>        
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Submit" class="btn btn-default" />
-      </div>      
-
-      <!-- <label for="Password">Password</label>
-      <input id="Password" name="Password"> -->
-      <!-- <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span> -->
-
-    </form>
-
-  </div>
-
+    <p>If you want to review all the code of this project check the 
+      <a href="https://github.com/eocampo/jqueryvalidations2017">Project's GitHub Repository.</a></p>
+    <nav>
+      <h2>Form Validation Samples</h2>
+      <ul>
+        <li><a href="unobtrusive-validation.html">Microsoft jQuery Unobstrusive Validation Sample</a></li>
+        <li><a href="bootstrap-validation.html">Bootrstap 4.6 Validation Sample</a></li>
+      </ul>
+      <h2>References</h2>
+      <ul>
+        <li><a href="https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-validation-to-the-model">
+          Adding Validation to the Model (MVC 4)</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/aspnet/whitepapers/mvc3-release-notes#new-features-in-aspnet-mvc-3-rc">
+          New Features in ASP.NET MVC 3 RC</a></li>
+      </ul>
+    </nav>
+</article>
+  
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>  
