@@ -8,6 +8,31 @@ This repository provides reference about common uses of jQuery's Form Validation
 
 "Unobstrusive" implementations does not pollute your source code with explicit calls to the supporting API but add HTML attributes to setup implicit handlers as extensions. This is done by making use of data- attributes in HTML.
 
+With the unobtrusive way:
+- You don't have to call the validate() method.
+- You specify requirements using data attributes (data-val, data-val-required, etc.)
+
+Jquery Validate Example:
+
+```Html
+<input type="text" name="email" class="required">
+<script>
+        $(function () {
+            $("form").validate();
+        });
+</script>
+```
+
+Jquery Validate Unobtrusive Example:
+
+```Html
+<input type="text" name="email" data-val="true"
+data-val-required="This field is required.">  
+
+<div class="validation-summary-valid" data-valmsg-summary="true">
+    <ul><li style="display:none"></li></ul></div>
+```
+
 For example in MVC 1.0 and 2.0 the ASP.NET Ajax library (Microsoft.Ajax.js) will render inline JavaScript on your <a> and <form> elements when you use the ActionLink, RouteLink or BeginForm and BeginRouteForm:
   
 ```Html
