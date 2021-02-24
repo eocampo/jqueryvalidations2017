@@ -2,6 +2,10 @@
 
 This repository provides reference about common uses of jQuery's Form Validation and the Extensions with Microsoft Unobstrusive Validation
 
+## References
+
+- [Microsoft jQuery Validation Unobstrusive GitHub Repository](https://github.com/aspnet/jquery-validation-unobtrusive)
+
 ## About Microsoft Unobstrusive Validation (MVC 3 Beta and MVC 4)
 
 ### What does mean "unobstrusive"?
@@ -9,6 +13,7 @@ This repository provides reference about common uses of jQuery's Form Validation
 "Unobstrusive" implementations does not pollute your source code with explicit calls to the supporting API but add HTML attributes to setup implicit handlers as extensions. This is done by making use of data- attributes in HTML.
 
 With the unobtrusive way:
+
 - You don't have to call the validate() method.
 - You specify requirements using data attributes (data-val, data-val-required, etc.)
 
@@ -27,14 +32,14 @@ Jquery Validate Unobtrusive Example:
 
 ```Html
 <input type="text" name="email" data-val="true"
-data-val-required="This field is required.">  
+data-val-required="This field is required.">
 
 <div class="validation-summary-valid" data-valmsg-summary="true">
     <ul><li style="display:none"></li></ul></div>
 ```
 
 For example in MVC 1.0 and 2.0 the ASP.NET Ajax library (Microsoft.Ajax.js) will render inline JavaScript on your <a> and <form> elements when you use the ActionLink, RouteLink or BeginForm and BeginRouteForm:
-  
+
 ```Html
   <form
     action="/ajax/callback"
@@ -95,6 +100,7 @@ With client-side validation enabled, you get the following markup: (some unimpor
 //]]>
 </script>
 ```
+
 When unobtrusive Ajax mode is enabled in MVC, the HTML that we generate looks significantly different:
 
 ```Html
@@ -128,7 +134,7 @@ There is an adapter collection available at jQuery.validator.unobtrusive.adapter
 The most common form of validator in jQuery Validate is a boolean validator; that is, the only data the validator needs to know is whether it’s on or not. Examples of boolean validators in jQuery Validate include “creditcard”, “date”, “digits”, “email”, “number”, “required”, and “url”.
 
 To automatically create an adapter for a boolean validator, you can call the following helper method:
- 
+
 ```ECMAScript
 jQuery.validator.unobtrusive.adapters.addBool(adapterName, [ruleName]);
 ```
