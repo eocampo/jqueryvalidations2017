@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery's Form Validation Reference</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #commentForm label {
+      min-width:240px;
+    }
+    #commentForm input[type="submit"]{
+      margin-left:244px;
+    }
+    #commentForm label.error {      
+      min-width:auto;
+      margin-left:8px;
+    }
+    .error {
+      color:red;      
+    }    
+  </style>
+</head>
+<body>
+  <article class="container">
+    <h1>jQuery's Form Validation Reference</h1>
+    <nav>
+      <a href="./index.html">Home</a>
+      / Standard jQuery Form Validation</a>
+    </nav>
+    <p>This repository provides reference about common uses of 
+    jQuery's Form Validation and the Extensions with 
+    Microsoft Unobstrusive Validation</p>
+    <form id="commentForm" autocomplete="off" novalidate>
+      <fieldset>
+        <legend>Comment Form</legend>      
+        <p>
+          <label for="cname">Name <span>(required)</span></label>
+          <input id="cname" name="name" minlength="2" type="text" required />
+        </p>
+        <p>
+          <label for="cemail">E-Mail <span>(required, won't be published)</span></label>
+          <input id="cemail" name="email" type="email" required />
+        </p>
+        <p>
+          <label for="curl">URL <span>(optional)</span></label>
+          <input id="curl" name="url" type="url" required />
+        </p>
+        <p>
+          <label for="ccomment">Your comment <span>(required)</span></label>
+          <input id="ccomment" name="comment" required />
+        </p>   
+        <p>
+          <input type="submit" value="Submit" class="btn btn-default" />
+        </p>   
+    </fieldset>
+    </form>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
+  <script>
+    $("#commentForm").validate();
+  </script>
+</body>
+</html>

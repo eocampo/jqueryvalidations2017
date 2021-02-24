@@ -10,6 +10,17 @@
   },
   "author": "Jose Ernesto Ocampo Cicero",
   "license": "MIT",
+  "keywords": [
+    "jquery",
+    "asp.net",
+    "mvc",
+    "validation",
+    "unobtrusive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eocampo/jqueryvalidations2017.git"    
+  },
   "devDependencies": {
     "browser-sync": "^2.26.14"
   },
