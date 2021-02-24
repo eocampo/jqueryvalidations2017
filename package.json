@@ -12,5 +12,9 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.14"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "jquery-validation": ">=1.16"
   }
 }
