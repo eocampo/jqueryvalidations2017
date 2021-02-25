@@ -1,0 +1,64 @@
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #eee;
+}
+
+.container {
+  background-color: #fefefe;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 2rem;
+  margin-top: 0;
+  padding: 4px 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+.hide {
+  display: none;
+}
+
+form {
+  margin-top: 32px;
+}
+
+div.form-group {
+  margin: 16px 8px;
+}
+
+form label {
+  min-width: 96px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+form.validation-form label {
+  min-width: 240px;
+}
+form.validation-form input[type="submit"] {
+  margin-left: 244px;
+}
+form.validation-form label.error {
+  min-width: auto;
+  margin-left: 8px;
+}
+.error {
+  color: red;
+}
+
+/* div.form-group {
+  margin: 16px 8px;
+} */
+
+/* form label {
+  min-width: 96px;
+  display: inline-block;
+  font-weight: 500;
+} */
+
+/* form input.form-control {
+} */

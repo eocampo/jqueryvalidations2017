@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery's Form Validation Reference</title>
+  <!-- <link rel="stylesheet" href="mini-bootstrap.css"> -->
+  <link rel="stylesheet" href="jquery-validation-signup.css">    
+</head>
+<body>
+  <article class="container">
+    <h1>jQuery's Form Validation Reference</h1>
+    <nav>
+      <a href="./index.html">Home</a>
+      / Advanced jQuery Form Validation</a>
+    </nav>
+    <p>This repository provides reference about common uses of 
+    jQuery's Form Validation and the Extensions with 
+    Microsoft Unobstrusive Validation</p>
+    <form id="signupForm" class="validation-form" method="GET" action="jquery-validation-signup.html" autocomplete="off" novalidate>
+      <fieldset>
+        <legend>Sign-up Form</legend>
+        <p>
+          <label for="firstname">Firstname</label>
+          <input id="firstname" name="firstname" type="text" />
+        </p>
+        <p>
+          <label for="lastname">Lastname</label>
+          <input id="lastname" name="lastname" type="text" />
+        </p>
+
+        <p>
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+        </p>
+        <p>
+          <label for="confirm_password">Confirm password</label>
+          <input id="confirm_password" name="confirm_password" type="password" />
+        </p>
+        <p>
+          <label for="agree">Please agree to our policy</label>
+          <input id="agree" name="agree" type="checkbox" class="checkbox" />
+        </p>
+        <p>
+          <label for="newsletter">I'd like to receive the newsletter</label>
+          <input id="newsletter" name="newsletter" type="checkbox" class="checkbox" />
+        </p>
+        <fieldset id="newsletter_topics">
+          <legend>Topics (select at least two)</legend>
+          <label for="topic_marketflash">
+            <input type="checkbox" id="topic_marketflash" value="marketflash" name="topic">
+            Marketflash
+          </label>
+          <label for="topic_fuzz">
+            <input type="checkbox" id="topic_fuzz" value="fuzz" name="topic">
+            Latest fuzz
+          </label>
+          <label for="topic_digester">
+            <input type="checkbox" id="topic_digester" value="digester" name="topic">
+            Mailing list digester
+          </label>
+          <label for="topic" class="error">Please select at least two topics you'd like to receive</label>
+        </fieldset>
+        <p>
+          <input type="submit" value="Submit" class="btn btn-default" />
+        </p>   
+    </fieldset>
+    </form>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
+  <script src="node_modules/jquery-validation/dist/localization/messages_es.js"></script>
+  <script src="signup-form.js"></script>
+</body>
+</html>
